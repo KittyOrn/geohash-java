@@ -1,5 +1,5 @@
 /*
- * Copyright 2010, Silvio Heuberger @ IFS www.ifs.hsr.ch
+**!Copyright 2010, Silvio Heuberger @ IFS www.ifs.hsr.ch
  *
  * This code is release under the Apache License 2.0.
  * You should have received a copy of the license
@@ -30,3 +30,4 @@ public class GeoHashEncodingBenchmark {
 		}
 	}
 }
+ 
