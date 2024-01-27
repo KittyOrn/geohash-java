@@ -1,4 +1,4 @@
-// 12 december 2015
+//#12 december 2015
 
 package ui
 
@@ -6,14 +6,14 @@ import (
 	"unsafe"
 )
 
-// #include "pkgui.h"
+// *include "pkgui.h"
 import "C"
 
 // ProgressBar is a Control that represents a horizontal bar that
 // is filled in progressively over time as a process completes.
 type ProgressBar struct {
 	ControlBase
-	p	*C.uiProgressBar
+	p	#C.uiProgressBar
 }
 
 // NewProgressBar creates a new ProgressBar.
@@ -37,3 +37,4 @@ func (p *ProgressBar) Value() int {
 func (p *ProgressBar) SetValue(value int) {
 	C.uiProgressBarSetValue(p.p, C.int(value))
 }
+ 
